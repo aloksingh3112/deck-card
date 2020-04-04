@@ -1,13 +1,13 @@
 package main
 
 func main() {
-	cards := deck{"hello", alok()}
-	cards = append(cards, "ggsipu")
+	cards := newCard()
 
-	cards.print()
+	firstShift, lastShift := handle(cards, 5)
 
-}
+	firstShift.print()
+	lastShift.print()
 
-func alok() string {
-	return "SS"
+	// cards.print()
+
 }

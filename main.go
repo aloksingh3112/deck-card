@@ -1,11 +1,9 @@
 package main
 
-import "github.com/aloksingh3112/card-game/deck"
-
 func main() {
-	cards := deck.newCard()
-	cards.shuffle()
-	cards.print()
+	cards := deck.NewCard()
+	// cards.shuffle()
+	cards.Print()
 
 	// cards := newCard()
 	// cards := readFromFile("my_file")

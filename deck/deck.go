@@ -10,13 +10,13 @@ import (
 
 type deck []string
 
-func (d deck) print() {
+func (d deck) Print() {
 	for i, card := range d {
 		fmt.Println(i, card)
 	}
 }
 
-func newCard() deck {
+func NewCard() deck {
 	cards := deck{}
 	cardSuits := []string{"spade", "heart", "club", "diamonds"}
 	cardValue := []string{"Ace", "one", "two", "three", "four"}

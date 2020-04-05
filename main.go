@@ -1,13 +1,19 @@
 package main
 
 func main() {
-	cards := newCard()
+	// cards := newCard()
+	cards := readFromFile("my_file")
+	cards.print()
+	// fmt.Println(cards)
 
-	firstShift, lastShift := handle(cards, 5)
+	// cards.saveTodrive("my_file")
 
-	firstShift.print()
-	lastShift.print()
+	// // firstShift, lastShift := handle(cards, 5)
 
-	// cards.print()
+	// // firstShift.print()
+	// // lastShift.print()
+	// fmt.Println(cards.toString())
+
+	// // cards.print()
 
 }

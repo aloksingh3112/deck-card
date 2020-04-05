@@ -1,9 +1,15 @@
 package main
 
+import "github.com/aloksingh3112/card-game/deck"
+
 func main() {
-	// cards := newCard()
-	cards := readFromFile("my_file")
+	cards := deck.newCard()
+	cards.shuffle()
 	cards.print()
+
+	// cards := newCard()
+	// cards := readFromFile("my_file")
+	// cards.print()
 	// fmt.Println(cards)
 
 	// cards.saveTodrive("my_file")
